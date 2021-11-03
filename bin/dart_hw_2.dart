@@ -1,4 +1,4 @@
-import 'package:dart_hw_2/dart_hw_2.dart' as dart_hw_2;
+import 'package:dart_hw_2/dart_hw_2.dart';
 
 void main() {
   print('Task 1. gcd\n_________');
@@ -15,44 +15,3 @@ void main() {
   print("_________\n");
 }
 
-void gcdMy(int numberOne, int numberTwo) {
-  int small = numberOne > numberTwo ? numberTwo : numberOne;
-
-  for (int i = small; i > 0; i--) {
-    if (numberOne % i == 0 && numberTwo % i == 0) {
-      print('gcdMy = $i');
-      return;
-    }
-  }
-  print(-1);
-}
-
-void gcdCplusplus(int a, int b) {
-  if (a < b) {
-    int c = b;
-    b = a;
-    a = c;
-  }
-
-  while (b != 0) {
-    a %= b;
-    int c = b;
-    b = a;
-    a = c;
-  }
-
-  print('gcdCplusplus = $a');
-}
-
-void getIntListFromStr(String input) {
-  print("input: $input");
-  input = input.replaceAll('.', '').replaceAll(',', '');
-  var listStr = input.split(' ');
-  var listResult = <int>[];
-  for (var str in listStr) {
-    try {
-      listResult.add(int.parse(str));
-    } catch (e) {}
-  }
-  print("result: $listResult");
-}

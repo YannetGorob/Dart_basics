@@ -3,6 +3,6 @@ import 'package:test/test.dart';
 
 void main() {
   test('calculate', () {
-    expect(calculate(), 42);
+    expect(gcdMy(100, 136), gcdCplusplus(100, 136));
   });
 }
