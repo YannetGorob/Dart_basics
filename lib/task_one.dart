@@ -1,4 +1,3 @@
-
 int gcdMy(int numberOne, int numberTwo) {
   int small = numberOne > numberTwo ? numberTwo : numberOne;
 
@@ -30,15 +29,8 @@ int gcdCplusplus(int a, int b) {
   return a;
 }
 
-void getIntListFromStr(String input) {
-  print("input: $input");
-  input = input.replaceAll('.', '').replaceAll(',', '');
-  var listStr = input.split(' ');
-  var listResult = <int>[];
-  for (var str in listStr) {
-    try {
-      listResult.add(int.parse(str));
-    } catch (e) {}
-  }
-  print("result: $listResult");
+void lcmCplusplus(int a, int b) {
+  int c = gcdMy(a, b);
+  double lcm = a * b / c;
+  print('lcm = $lcm');
 }
