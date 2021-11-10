@@ -1,4 +1,5 @@
-import 'package:dart_hw_2/method.dart';
+import 'package:dart_hw_2/task_one.dart';
+import 'package:dart_hw_2/task_two.dart';
 import 'package:test/test.dart';
 
 void main() {
