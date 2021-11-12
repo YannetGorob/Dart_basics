@@ -5,7 +5,9 @@ class Point {
   int y;
   int z;
   Point(this.x, this.y, this.z);
-  Point.factory({this.x = -2, this.y = -2, this.z = 0});
+  factory Point.factory() {
+    return Point(-2, -2, 0);
+  }
   void display() {
     print("координаты точки А: $x, $y, $z");
   }

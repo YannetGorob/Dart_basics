@@ -28,7 +28,7 @@ void main() {
   numbConvert(36);
   print('-' * 30);
   print('Task 3');
-  getIntListFromStr('My name is Yana, I am 22, I was born on 14.12.1998');
+  getIntListFromStr('My name is Yana, I am 22, I was born on 14.12.1998 1998-12-14');
   getIntListFromStr(
       'Числа из каждой цветовой группы необходимо указывать поочередно - сначала 1 черное, затем 24 красное, 2 черное -> 23 красное -> 3 черное -> 22 красное и т.д. ');
   print('-' * 30);
